@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishimarg Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <div id="header">
+                <img src="krishimarg.png" alt="Logo">
+                <div id="headText">
+                    <div id="welcome" class="heading">Welcome To</div>
+                    <div id="krishimarg" class="heading">Krishimarg</div>
+                </div>
+            </div>
+            <form>  
+                <h3>SIGN UP</h3>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                
+                <a href="#" class="forgot-password">Forgot Password?</a>
+
+                <button type="button" class="login-btn">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#">REGISTER NOW</a></p>
+            <div class="role-buttons">
+                <button type="button" onclick="window.location.href='FarmerRepo/farmer.html';">Farmer</button>
+                <button type="button" onclick="window.location.href='UserRepo/user.html';">Retailer</button>
+            </div>
+            <button class="help-btn">Need help</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d8e4bc; /* Light green background */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.signup-box {
+    background: #f3f2f2;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signup-box h1 {
+    font-size: 22px;
+    color: #333;
+}
+
+.signup-box h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.signup-box h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.signup-box label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.signup-box input[type="text"],
+.signup-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+
+.signup-box .forgot-password {
+    display: block;
+    margin-bottom: 20px;
+    color: #5a8711;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.signup-box .login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5a8711;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.signup-box p {
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-box p a {
+    color: #5a8711;
+    text-decoration: none;
+}
+
+.role-buttons button {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5a8711;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    margin: 10px 5px;
+}
+
+.signup-box .help-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.heading{
+    font-size: 30px;
+}
+#header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header img{
+    height: 90px;
+}
+#krishimarg{
+    color: #5a8711;
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
