@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+        }
+
+        h1 {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .back-icon {
+            font-size: 24px;
+            color: #000000;
+            text-align: center;
+            cursor: pointer;
+            width: 40px;
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+
+        .view-records {
+            background-color: #f2f2f2;
+            border-radius: 15px;
+            padding: 20px;
+            position: relative;
+            width: 81%;
+            margin: auto;
+            bottom: 19px;
+        }
+
+        .dropdown-toggle {
+            background-color: #6CA235;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            position: relative;
+        }
+
+        .dropdown-toggle .arrow {
+            position: absolute;
+            right: 20px;
+        }
+
+        .options a {
+            display: block;
+            margin: 15px 0;
+            padding: 12px   ;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            /* box-shadow: 2px 5px 8px grey; */
+        }
+
+        .plus-icon {
+            font-size: 24px;
+            color: #000000;
+            position: absolute;
+            bottom: 8px;
+            right: 10px;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+        .plus-icon:active{
+            background-color: #00000025;
+        }
+
+        .compare-benefits,
+        .future-plans {
+            margin: 20px 0;
+        }
+
+        .compare-benefits button,
+        .future-plans button {
+            width: 85%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            background-color: white;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+            text-align: left;
+            top: 10px;
+        }
+
+        .compare-benefits .arrow,
+        .future-plans .arrow {
+            position: absolute;
+            right: 20px;
+        }
+
+        .need-help {
+            margin-top: 20px;
+        }
+
+        .need-help button {
+            padding: 10px 20px;
+            border-radius: 25px;
+            background-color: white;
+            border: 2px solid #e0e0e0;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            cursor: pointer;
+            width: 143px;
+            margin: auto;
+            position: relative;
+            top: 10px;
+        }
+
+        .help-icon {
+            background-color: #005ea2;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 18px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            top: 16px;
+            height: 40px;
+        }
+        #heading{
+            font-size: 22px;
+            text-align: center; 
+            width: 250px;
+            margin: auto;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="back-icon" onclick="window.history.back();">←</div>
+            <div id="heading">Transaction Management</div>
+        </header>
+        <div class="view-records">
+            <button class="dropdown-toggle">VIEW RECORDS <span class="arrow">▼</span></button>
+            <div class="options">
+                <a href="week.xlsx" download>1 WEEK</a>
+                <a href="month.xlsx" download>1 MONTH</a>
+                <a href="year.xlsx" download>1 YEAR</a>
+            </div>
+            <div class="plus-icon">+</div>
+        </div>
+        <div class="compare-benefits">
+            <button>COMPARE BENEFITS <span class="arrow">▼</span></button>
+        </div>
+        <div class="future-plans">
+            <button>FUTURE PLANS <span class="arrow">▼</span></button>
+        </div>
+        <div class="need-help">
+            <button><span class="help-icon">?</span>Need help</button>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.options a').forEach(item => {
+            item.addEventListener('click', event => {
+                // Download Excel files on click
+                const link = document.createElement('a');
+                link.href = event.target.getAttribute('href');
+                link.download = '';
+                link.click();
+            });
+        });
+    </script>
+</body>
+
+</html>

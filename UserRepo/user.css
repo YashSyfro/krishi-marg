@@ -1,0 +1,128 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #000000;
+}
+
+.menu-icon, .notification-icon {
+    font-size: 20px;
+    color: #000000;
+}
+
+.greeting {
+    padding: 20px;
+    text-align: center;
+    color: #6c757d;
+}
+
+.greeting h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #5a8711; /* Green color */
+}
+
+.search-bar {
+    padding: 0 20px;
+}
+
+.search-bar input {
+    width: 94.5%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.schedule {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d4d4d4;
+}
+
+.schedule img {
+    height: 70px;
+}
+
+.schedule p:first-child {
+    font-weight: bold;
+    color: #5a8711;
+}
+
+.home-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.option {
+    padding: 20px;
+    text-align: center;
+    background-color: #e1f0c9; /* Light green */
+    border: 1px solid #5a8711; /* Green */
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+    height: 78.4px;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #4CAF50;
+    font-size: 16px;
+}
+
+.nav-btn:nth-child(3) {
+    font-size: 24px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #5a8711;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-25%);
+}
+.icon{
+    height: 50px;
+}
+#cart{
+    height: 45px;
+}

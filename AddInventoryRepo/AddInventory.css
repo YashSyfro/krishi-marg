@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #6ca730;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    font-size:25px;
+    color: white;
+    margin-right: 100%;
+}
+.back-button:active{
+    background-color: rgba(255, 255, 255,0.1);
+}
+.inventory-title {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.category {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category img {
+    height: 45px;
+    margin-right: 10px;
+}
+
+.category span {
+    flex-grow: 1;
+    font-size: 15px;
+    text-align: center;
+}
+
+.add-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+.need-help {    
+    display: flex;
+    margin-top: 10px;
+    color: black;
+    width: 82px;
+}
+.need-help:active{
+    text-decoration: underline;
+}
+.help-button {
+    background-color: #d1e0f0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-button {
+    color: #6ca730;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-button:hover {
+    text-decoration: underline;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+  }
+  
+  .dropdown:hover ul {
+    display: block;
+  }
+  
+  .dropdown li {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown li a:hover {
+    color: #666;
+  }
+  .add-dropdown {
+    display: none; /* hide the dropdown by default */
+  }
+  
+  .add-button:focus + .add-dropdown {
+    display: block; /* show the dropdown when the button is focused */
+  }
+  ul a{
+    color: #5a8711;
+    text-decoration: none;
+  }
+  .category ul{
+    width: 100%;
+  }
+  .header-container,
+.category {
+    max-width: 100%;
+    overflow-x: hidden; /* Optional: To ensure nothing overflows */
+}

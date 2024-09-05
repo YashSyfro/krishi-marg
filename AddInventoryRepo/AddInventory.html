@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="AddInventory.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <button class="back-button" onclick="window.history.back();">&#8592; </button>
+            <h1>Product list</h1>
+            <div class="header-right">
+                <p class="inventory-title">Add to Inventory</p>
+                <!-- <button class="add-button" onclick="toggleDropdown('header-dropdown')">+</button> -->
+                <ul id="header-dropdown" class="add-dropdown">
+                    <li><a href="#">Add new product</a></li>
+                    <li><a href="#">Edit product list</a></li>
+                    <li><a href="#">Delete product</a></li>
+                    <li style="list-style-type: none;"><a href="#" class="need-help">Need help?</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="category">
+            <img src="grain.png" alt="Grains">
+            <span>GRAINS</span>
+            <button class="add-button" onclick="toggleDropdown('grains-dropdown', this)" id="GrainsPlus">+</button>
+            <ul id="grains-dropdown" class="add-dropdown">
+                <li><a href="#">Add new grain</a></li>
+                <li><a href="#">Edit grain list</a></li>
+                <li><a href="#">Delete grain</a></li>
+                <li style="list-style-type: none;"><a href="#" class="need-help">Need help?</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <img src="vegetable.png" alt="Vegetables">
+            <span>VEGETABLES</span>
+            <button class="add-button" onclick="toggleDropdown('vegetables-dropdown', this)"
+                id="VegetablesPlus">+</button>
+            <ul id="vegetables-dropdown" class="add-dropdown">
+                <li><a href="#">Add new vegetable</a></li>
+                <li><a href="#">Edit vegetable list</a></li>
+                <li><a href="#">Delete vegetable</a></li>
+                <li style="list-style-type: none;"><a href="#" class="need-help">Need help?</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <img src="fruit.png" alt="Fruits">
+            <span>FRUITS</span>
+            <button class="add-button" onclick="toggleDropdown('fruits-dropdown', this)" id="FruitsPlus">+</button>
+            <ul id="fruits-dropdown" class="add-dropdown">
+                <li><a href="#">Add new fruit</a></li>
+                <li><a href="#">Edit fruit list</a></li>
+                <li><a href="#">Delete fruit</a></li>
+                <li style="list-style-type: none;"><a href="#" class="need-help">Need help?</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <img src="polutry.png" alt="Poultry Products">
+            <span>POULTRY PRODUCTS</span>
+            <button class="add-button" onclick="toggleDropdown('poultry-dropdown', this)" id="PolutryPlus">+</button>
+            <ul id="poultry-dropdown" class="add-dropdown">
+                <li><a href="#">Add new poultry product</a></li>
+                <li><a href="#">Edit poultry product list</a></li>
+                <li><a href="#">Delete poultry product</a></li>
+                <li style="list-style-type: none;"><a href="#" class="need-help">Need help?</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <img src="other.png" alt="Others">
+            <span>OTHERS</span>
+            <button class="add-button" onclick="toggleDropdown('others-dropdown', this)" id="OtherPlus">+</button>
+            <ul id="others-dropdown" class="add-dropdown">
+                <li><a href="#">Add new other product</a></li>
+                <li><a href="#">Edit other product list</a></li>
+                <li><a href="#">Delete other product</a></li>
+                <li style="list-style-type: none;"><a href="#" class="need-help">Need help?</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <script>
+        function toggleDropdown(dropdownId, btn) {
+            var dropdown = document.getElementById(dropdownId);
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+                btn.innerHTML = "+"; // Update the clicked button
+            } else {
+                dropdown.style.display = "block";
+                btn.innerHTML = "-"; // Update the clicked button
+            }
+        }
+
+    </script>
+
+    <style>
+        .add-dropdown {
+            display: none;
+        }
+    </style>
+</body>
+
+</html>

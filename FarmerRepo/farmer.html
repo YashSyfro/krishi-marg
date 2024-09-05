@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Farmer</title>
+    <link rel="stylesheet" href="farmer.css">
+</head>
+<body>
+        <header>
+            <div class="menu-icon">&#9776;</div>
+            <h1>HOME</h1>
+            <div class="notification-icon">&#128276;</div>
+        </header>
+    
+        <main>
+            <div class="greeting">
+                <h2>Hi Farmer!</h2>
+                <p>Good Morning</p>
+            </div>
+    
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+    
+            <div class="schedule">
+                <div id="scheduleText">
+                    <p>Schedule!</p>
+                    <p>Add/Check your schedule for today</p>
+                </div>
+                <img src="farmerSchedule.png">
+            </div>
+    
+            <div class="home-options">
+                <button class="option" onclick="window.location.href='../InventoryRepo/inventory.html'">Inventory</button>
+                <button class="option" onclick="window.location.href='../TransactionRepo/transaction.html'">Transaction Management</button>
+                <button class="option">Market Price</button>
+                <button class="option">My Rights</button>
+            </div>
+        </main>
+    
+        <nav class="bottom-nav">
+            <button class="nav-btn"><img src="home1.png" alt="" class="icon"></button>
+            <button class="nav-btn"><img src="service1.png" alt=""class ="icon"></button>
+            <button class="nav-btn" onclick="window.location.href='../AddInventoryRepo/AddInventory.html'">+</button>
+            <button class="nav-btn"><img src="order1.png" alt="" class="icon"></button>
+            <button class="nav-btn"><img src="profile1.png" alt=""class = "icon"></button>
+        </nav>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
